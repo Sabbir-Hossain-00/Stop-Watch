@@ -8,8 +8,27 @@
      <!-- tailwind css cdn -->
      <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="w-full h-screen bg-slate-900 flex items-center justify-center">
     
+    <main class="w-[350px] h-[600px] bg-zinc-800 rounded-3xl p-3 text-center">
+        <!-- screen -->
+        <div  class="h-2/6 pt-7">
+            <span id="screen" class="text-8xl text-slate-900">0</span>
+        </div>
+        <!-- buttons -->
+        <div class="grid grid-cols-2 gap-4">
+            <button id="start-btn" class="bg-white rounded-full hover:bg-transparent hover:border border-white hover:text-white hover:transition-colors px-6 py-2 cursor-pointer md:text-xl text-lg">Start</button>
+            <button id="reset-btn" class="bg-white rounded-full hover:bg-transparent hover:border border-white hover:text-white hover:transition-colors px-6 py-2 cursor-pointer md:text-xl text-lg">Reset</button>
+            <button id="stop-btn" class="bg-white rounded-full hover:bg-transparent hover:border border-white hover:text-white hover:transition-colors px-6 py-2 cursor-pointer md:text-xl text-lg">Stop</button>
+            <button id="get-time-btn" class="bg-white rounded-full hover:bg-transparent hover:border border-white hover:text-white hover:transition-colors px-6 py-2 cursor-pointer md:text-xl text-lg">Get Time</button>
+            <button id="clear-btn" class="bg-white rounded-full hover:bg-transparent hover:border border-white hover:text-white hover:transition-colors px-6 py-2 cursor-pointer md:text-xl text-lg">Clear Time</button>
+        </div>
+        <div id="show-time">
+
+        </div>
+    </main>
+
+
     <script src="script.js"></script>
 </body>
 </html>
